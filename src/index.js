@@ -33,9 +33,9 @@ async function fetchWeather(cityName) {
         document.getElementById('waether-disc').textContent = response.weather[0].description;
         document.getElementById('cityName').textContent = response.name+`, ${response.sys.country}`;
         document.getElementById('degree').textContent = response.main.temp + '°C';
-        document.querySelector('#humidity-icon').src = '../images/humidity.png';
+        document.querySelector('#humidity-icon').src = './images/humidity.png';
         document.querySelector('#humidity-icon').hidden=false;
-        document.querySelector('#wind-icon').src='../images/windspeed.png';
+        document.querySelector('#wind-icon').src='./images/windspeed.png';
         document.querySelector('#wind-icon').hidden=false;
         document.querySelector('#humidity').textContent = "humidity";
         document.querySelector('#wind').textContent = "Wind speed";
