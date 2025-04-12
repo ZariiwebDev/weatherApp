@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.app-box{
+    background-image: linear-gradient(to bottom right,rgba(131, 238, 238, 0.918),rgba(103, 103, 255, 0.815) 80%);
+    width: 80vb;
+    border-radius: 12px 12% 12px 12%;
+}
+.search-engine{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+.search-engine input[type="text"]{
+    outline: none;
+    border: none;
+    height: 6vh;
+    padding-left: 12px;
+    width: 50vb;
+    overflow-x: scroll;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.123);
+    border: 1px solid white;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+.search-engine input[type="text"]:active{
+    border-color:#faf2f2da;
+}
+.search-engine input[type="text"]:focus{
+    box-shadow: 0px 0px 12px rgb(121, 231, 226);
+}
+.search-engine input[type="text"]::placeholder{
+    color: white;
+    opacity: .4;
+}
+.search-engine button[type="submit"]{
+    outline: none;
+    border: none;
+    height: 6vb;
+    width: 8vb;
+    border-radius:12rem;
+    margin-right: 12px;
+    background-color: rgba(255, 255, 255, 0.123);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-engine button[type="submit"]:hover{
+    cursor: pointer;
+}
+.search-engine button[type="submit"]:active{
+    border-color: rgb(239, 226, 250);
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.details #degree{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 4rem;
+    text-align: center;
+}
+.details #cityName{
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: -12px;
+    font-size: 1.5rem;
+    padding-right: 6px;
+    font-weight: bold;
+}
+.further-details{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 1rem;
+}
+.further-details .disc{
+    text-align: center;
+    margin-left: 12px;
+    font-weight: 300;
+}
+.further-details .wind-details{
+    padding-right: 2rem;
+}
+.further-details .humidity-details{
+    padding-left: 3rem;
+}
+.group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.group .data{
+    padding-top: 6px;
+    margin-left: 4px;
+    font-size: 1.4rem;
+}
