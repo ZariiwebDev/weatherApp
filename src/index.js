@@ -23,7 +23,6 @@ function cityNameValidator(cityName){
     return '';
 }
 async function fetchWeather(cityName) {
-    console.log("love");
     const request = await fetch(API_URL+`&appid=${API_KEY}&q=${cityName}`);
     const response = await request.json();
     console.log(response);
