@@ -1,3 +1,4 @@
+@media screen and (max-width:1120px){
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +13,7 @@ body{
 }
 .app-box{
     background-image: linear-gradient(to bottom right,rgba(131, 238, 238, 0.918),rgba(103, 103, 255, 0.815) 80%);
-    width: 80vb;
+    max-width: 80vb;
     border-radius: 12px 12% 12px 12%;
 }
 .search-engine{
@@ -116,4 +117,47 @@ body{
     padding-top: 6px;
     margin-left: 4px;
     font-size: 1.4rem;
+}
+#wind-icon,#humidity-icon{
+    width: 40px;
+}
+}
+@media  screen and (max-width:320px){
+    .app-box{
+        width: 100%;
+    }
+    .search-engine input[type="text"]{
+        width: 90%;
+    } 
+    .search-engine{
+        column-gap: 8px;
+        width: 100%;
+    } 
+    .further-details{
+        width: 100%;
+        
+    }
+    .further-details .humidity-details{
+        padding-left: 0;
+        font-size: .8rem;
+    }
+    .further-details .wind-details{
+        font-size: .8rem;
+    }
+    .details #degree{
+        font-size: 2rem;
+    }
+    .details #cityName{
+        font-size: 1rem;
+    }
+    .icon{
+        margin-top: 1rem;
+    }
+    #humidity-data,#speed-data{
+        font-size: 1rem;
+    }
+    #wind-icon,#humidity-icon{
+        width: 20px;
+    }
+
 }
