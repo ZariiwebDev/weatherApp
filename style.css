@@ -122,16 +122,20 @@ body{
     width: 40px;
 }
 
-@media  screen and (max-width:320px){
+@media  screen and (max-width:480px){
     .app-box{
         width: 100%;
     }
     .search-engine input[type="text"]{
-        width: 90%;
+        width: 100%;
+        margin-left: 40px;
     } 
     .search-engine{
         column-gap: 8px;
-        width: 100%;
+        width: 90%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
     } 
     .further-details{
         width: 100%;
